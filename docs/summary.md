@@ -38,4 +38,8 @@ git log --graph --pretty=format:'%h -%d %s (%cr)' --abbrev-commit
    git push -f origin dev
 # 合并分支（保留历史）
    git merge --no-ff feature-plot
+# 需要返回主分支
+   git checkout main
 
+## 部署过程中遇到的问题及解决方案
+子模块问题：重新搭建一个仓库，不使用子模块
